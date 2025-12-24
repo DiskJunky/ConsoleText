@@ -59,7 +59,7 @@ public static class ColorConsole
     /// <param name="foreColor">The foreground color to use.</param>
     /// <param name="backColor">The background color to use.</param>
     /// <param name="decoration">The text formatting to use.</param>
-    public static void WriteLine(string message,
+    public static void WriteLine(string message = "",
                                  ConsoleColor? foreColor = null,
                                  ConsoleColor? backColor = null,
                                  ConsoleDecoration decoration = ConsoleDecoration.None)
@@ -73,7 +73,7 @@ public static class ColorConsole
     /// <param name="foreColor">The foreground color to use.</param>
     /// <param name="backColor">The background color to use.</param>
     /// <param name="decoration">The text formatting to use.</param>
-    public static void Write(string message,
+    public static void Write(string message = "",
                              ConsoleColor? foreColor = null,
                              ConsoleColor? backColor = null,
                              ConsoleDecoration decoration = ConsoleDecoration.None)
@@ -89,7 +89,7 @@ public static class ColorConsole
     /// <param name="backColor">The background color to use.</param>
     /// <param name="decoration">The text formatting to use.</param>
     public static void Write(Action<string> write,
-                             string message,
+                             string message = "",
                              ConsoleColor? foreColor = null,
                              ConsoleColor? backColor = null,
                              ConsoleDecoration decoration = ConsoleDecoration.None)

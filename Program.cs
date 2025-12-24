@@ -1,7 +1,24 @@
-﻿using ConsoleText;
+﻿using System.Runtime.CompilerServices;
+using ConsoleText;
 using static ConsoleText.ColorConsole;
 
-WriteLine("Testing bold...", ConsoleColor.Yellow, ConsoleColor.DarkBlue, decoration: ConsoleDecoration.Bold);
-WriteLine("Testing italics and fore/back colors...", ConsoleColor.DarkGreen, ConsoleColor.Gray, ConsoleDecoration.Italics);
-WriteLine("Testing underline", ConsoleColor.White, decoration: ConsoleDecoration.Underline);
-WriteLine("Testing stricken", ConsoleColor.Red, decoration: ConsoleDecoration.Strikethrough);
+Write("Color", ConsoleColor.Cyan, decoration: ConsoleDecoration.Italics);
+WriteLine("Text", ConsoleColor.Yellow, decoration: ConsoleDecoration.Underline);
+WriteLine();
+
+{
+    Write("This ");
+    Write("application", ConsoleColor.Green);
+    Write(" demonstrates the use of ");
+    Write("color", ConsoleColor.DarkYellow);
+    Write(" and ");
+    Write("text", decoration: ConsoleDecoration.Underline);
+    Write(" effects", decoration: ConsoleDecoration.Italics);
+    Write(" using ");
+    Write("console", ConsoleColor.Black, ConsoleColor.Yellow);
+    Write(" ");
+    Write("output", ConsoleColor.DarkRed, ConsoleColor.White);
+
+    WriteLine(".");
+}
+
